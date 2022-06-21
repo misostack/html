@@ -1,0 +1,53 @@
+<%= require('html-loader!./partials/header.html').default %>
+  <section class="container section">
+    <div class="page-content max-w-2xl mx-auto">
+      <h1>Software Architecture là gì?</h1>
+      <p>
+        <em>To boost the post’s SEO, include a keyword in the title.</em>
+      </p>
+      <p>
+        Now that you’ve said hello to the world, it’s time to introduce yourself. Your first blog post is a chance to
+        tell readers who you are with a short bio, as well as share what your blog is about and why you are blogging.
+        You can include something personal or funny, or add a photo of yourself or your business. Give your readers an
+        idea of what to expect in upcoming blog posts.
+      </p>
+      <img src="./assets/images/post-image.png" alt="Minh họa software architecture" />
+      <p>
+        <em>
+          Format each of your headings below to Heading 2 to keep your post neat and SEO-friendly.
+        </em>
+      </p>
+      <p>
+        It might help to break up your introduction into 2 or 3 main points, so it’s easy for your readers to follow.
+        Each paragraph or two should focus on one point.
+      </p>
+
+      <h2>Check Your Post Settings</h2>
+      <p>Explore the sidebar on the left. You can add media to add color to your post. You can also change the cover
+        image, optimize the SEO Settings, add categories or tags, and much more. Spend some time discovering each tab
+        and learn how you can enhance your future posts.</p>
+
+      <h2>Add a Closing Message</h2>
+      <p>
+        End by restating your main message. You can sign off with a funny note or an open question.
+        Use this space to tell readers what they should do next. Invite readers to leave a comment, or add a button with
+        your main call-to-action, e.g., <strong>Buy Now or Subscribe</strong>.
+      </p>
+      <div>
+        <a href="./category.html"
+          class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">software
+          architecture</a>
+      </div>
+    </div>
+  </section>
+  <section class="container section">
+    <div class="max-w-2xl mx-auto">
+      <div class="font-heading text-2xl font-semibold">You Might Also Like</div>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <% for(var i=0; i<2; i++) {%>
+          <%= require('html-loader!./partials/card-post-default.html').default %>
+            <% } %>
+      </div>
+    </div>
+  </section>
+  <%= require('html-loader!./partials/footer.html').default %>

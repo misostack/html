@@ -1,0 +1,14 @@
+<%= require('html-loader!./partials/header.html').default %>
+  <section class="container section hero-section">
+    <h1 class="hero-section-heading">Category title</h1>
+  </section>
+  <section class="container section grid md:grid-cols-4 gap-8">
+    <% for(var i=0; i<8; i++) {%>
+      <%= require('html-loader!./partials/card-post-default.html').default %>
+        <% } %>
+  </section>
+  <section class="container">
+    <%= require('html-loader!./partials/pagination.html').default %>
+  </section>
+
+  <%= require('html-loader!./partials/footer.html').default %>
